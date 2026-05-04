@@ -1,4 +1,4 @@
-# 🏫 SRMS Backend — School Result Management System
+#  SRMS Backend — School Result Management System
 
 A fully-featured Spring Boot backend for managing school operations.
 
