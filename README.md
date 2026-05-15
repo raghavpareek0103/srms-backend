@@ -1,4 +1,4 @@
-#  SRMS Backend — School Result Management System
+#  SRMS Backend — School ResultManagement System
 
 A fully-featured Spring Boot backend for managing school operations.
 
@@ -123,8 +123,7 @@ http://localhost:8080/swagger-ui.html
 | POST | `/report-card/email/{studentId}` | ADMIN |
 
 ## 🔑 Default Admin Credentials
-Username: admin
-Password: Admin@123
+Use seeded admin credentials configured locally.
 
 ## 📧 Email Setup
 
