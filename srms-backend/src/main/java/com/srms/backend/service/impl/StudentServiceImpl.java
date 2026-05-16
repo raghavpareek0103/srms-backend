@@ -5,6 +5,8 @@ import com.srms.backend.exception.ResourceNotFoundException;
 import com.srms.backend.repository.StudentRepository;
 import com.srms.backend.service.StudentService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -22,6 +24,11 @@ public class StudentServiceImpl implements StudentService {
                     "Student with roll number " + student.getRollNumber() + " already exists");
         }
         return repository.save(student);
+    }
+
+    @Override
+    public Page<Student> getAllStudents(Pageable pageable) {
+        return repository.findAll(pageable);
     }
 
     @Override
